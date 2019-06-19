@@ -10,4 +10,16 @@ describe('<Display />', () => {
       const { getByText } = render(<App />);
       getByText(/hits/i);
     });
+    it('displays strikes', () => {
+      const { getByText } = render(<App />);
+      getByText(/strikes/i);
+    });
+    it('displays fouls', () => {
+      const { getByText } = render(<App />);
+      getByText(/fouls/i);
+    });
+    it('displays balls', () => {
+      const { getByText } = render(<App />);
+      getByText(/balls/i);
+    });
   });

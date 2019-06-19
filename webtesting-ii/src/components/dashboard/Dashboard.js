@@ -24,8 +24,8 @@ export default class Dashboard extends React.Component {
                 <h3>Dashboard</h3>
                 <button data-testid='hitsButton' name='hits' onClick={this.addHit}>Hit</button>
                 <button data-testid='strikesButton' name='strikes' onClick={this.addStrike}>Strike</button>
-                <button name='fouls' onClick={this.addFoul}>Foul</button>
-                <button name='balls' onClick={this.addBall}>Ball</button>
+                <button data-testid='foulsButton' name='fouls' onClick={this.addFoul}>Foul</button>
+                <button data-testid='ballsButton' name='balls' onClick={this.addBall}>Ball</button>
             </div>
         )
     }
