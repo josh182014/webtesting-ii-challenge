@@ -4,16 +4,9 @@ import Display from './Display'
 import '@testing-library/react/cleanup-after-each';
 
 
-describe('Strike Button', () => {
-    it('increases count', () => {
+describe('<Display />', () => {
+    it('displays hits', () => {
       const { getByText } = render(<Display />);
-      // find the button
-      const button = getByText(/strike/i);
-
-      // click it
-      fireEvent.click(button);
-
-      // confirm that "hello developers" is there
-      expect(getByText(/Strikes: 0/i)).toBe('Strikes: 1')
+      // getByText(/hits/i);
     });
   });
